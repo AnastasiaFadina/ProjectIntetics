@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<header>
+    <div>
+        <img class="logo" alt="" src="img/1.png">
+        <h1>Welcome to Image Previewer!</h1>
+    </div>
+    <ul>
+        <li><a href="#modal1" class="open_modal">Sign in</a></li>
+        <li><a href="#modal2" class="open_modal">Sign up</a></li>
+    </ul>
+</header>
+
+<div id="modal1" class="modal_div">
+    <span class="modal_close">X</span>
+    <form action="#" method="post" id="jquery_form">
+        <h1>Sign in</h1>
+        <input type="text" name="form_email" placeholder="Email Address" >
+        <br>
+        <input type="password" name="form_pswd1" placeholder="Password">
+        <br>
+        <input type="submit" class="sub" value="Login" >
+    </form>
+    <br>
+    Don't have an account?<a href="#modal2" class="open_modal">Signup</a>
+</div>
+
+<div id="modal2" class="modal_div">
+    <span class="modal_close">X</span>
+    <form action="#" method="post" id="jquery_f">
+        <div class="f_modal">
+            <h1>Sign up</h1>
+            <input type="text" name="form_name" placeholder="Username">
+            <br>
+            <input type="text" name="form_email" placeholder="E-mail" >
+            <br>
+            <input type="password" name="form_pswd1" id="form_pswd1" placeholder="Password">
+            <br>
+            <input type="password" name="form_pswd2" placeholder="Retype password">
+            <br>
+            <input type="submit" class=" sub"  value="Sign Me Up">
+            <br>
+        </div>
+    </form>
+</div>
+
+<div id="overlay"></div>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
